@@ -20,7 +20,10 @@ public class WebAppInitializer implements WebApplicationInitializer{
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("*.html");
 		dispatcher.addMapping("*.pdf");
-		
+		dispatcher.addMapping("*.json");
+		dispatcher.addMapping("*.xml");
+
+
 	}
 
 	private AnnotationConfigWebApplicationContext getContext() {
