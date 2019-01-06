@@ -12,6 +12,11 @@ public class HelloController {
 	public String sayHello(Model model) {
 		model.addAttribute("greeting", "Hello world");
 		
-		return "hello.jsp";
+		return "hello";
+	}
+	
+	@RequestMapping(value = "/index")
+	public String index(Model model) {
+		return "forward:index.jsp";
 	}
 }
